@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>国漫崛起</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script src="./JS/vue.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="nav">
+            <ul>
+                <div class="underline" :class="[{nav0: nav0}, {nav1: nav1}, {nav2: nav2}]"></div>
+                <li id="header-li-0" @mouseenter="mouseenterli" @mouseleave="mouseleaveli">首页</li>
+                <li id="header-li-1" @mouseenter="mouseenterli" @mouseleave="mouseleaveli">时间轴</li>
+                <li id="header-li-2" @mouseenter="mouseenterli" @mouseleave="mouseleaveli">关于</li>
+            </ul>
+        </div>
+    </div>
+    <script src="./JS/utilities.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>

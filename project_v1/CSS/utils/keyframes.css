@@ -1,0 +1,329 @@
+/* universal */
+@keyframes emerge {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.emerge {
+    animation: emerge 0.5s both;
+    opacity: 1;
+}
+
+.opacity1 {
+    opacity: 1;
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+@keyframes adf {
+    from {
+
+    }
+    to{
+        opacity: 1;
+
+    }
+}
+.disappear {
+    animation: disappear 0.5s both;
+}
+
+.opacity0 {
+    opacity: 0;
+}
+
+.display_none {
+    display: none;
+}
+
+.display_block {
+    display: block;
+}
+
+.overflow_hidden {
+    overflow: hidden;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+
+.fade {
+    animation: fade 0.5s both;
+}
+
+@keyframes fade_reverse {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade_reverse {
+    animation: fade_reverse 0.5s both;
+}
+
+@keyframes fade_away {
+    from {opacity: 0.5;}
+    to {opacity: 0;}
+}
+.fade_away {
+    animation: fade_away 0.5s both;
+}
+
+@keyframes click_magnify {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.click_magnify {
+    animation: click_magnify 0.25s linear;
+}
+
+@keyframes toAndFro {
+    0% {
+        top: 9.5rem;
+    }
+
+    50% {
+        top: 9.6rem;
+    }
+
+    100% {
+        top: 9.5rem;
+    }
+}
+
+@keyframes to {
+    0% {
+        top: 9.55rem;
+    }
+
+    100% {
+        top: 9.7rem;
+    }
+}
+@keyframes click_magnify_game {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1.8);
+    }
+}
+
+.click_magnify_game {
+    animation: click_magnify_game 0.5s both;
+}
+
+@keyframes gameSelected {
+    0% {
+        top: 5.2rem;
+        left: 9.4rem;
+        width: 0;
+        height: 0;
+        filter: blur(100rem);
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10.8rem;
+        filter: blur(1rem);
+        /* transform: scale(1); */
+    }
+}
+
+.gameSelected {
+    animation: gameSelected 2s ease-in both;
+    filter: blur(1);
+}
+@keyframes flyToMiddle {
+    100% {
+        top: 3.3rem;
+        left: 8.6rem;
+    }
+}
+.flyToMiddle {
+    animation: flyToMiddle 1s both;
+}
+/* share.html */
+@keyframes fly0 {
+    0% {
+        width: 0;
+        height: 0;
+        right: -4rem;
+        top: 0.9rem;
+        border-radius: 60%;
+        opacity: 0.2;
+    }
+
+    21% {
+        animation: linear;
+    }
+
+    22% {
+        width: 1.2rem;
+        height: 1.2rem;
+        top: 0;
+        right: 0;
+    }
+
+    50% {
+        border-radius: 0;
+        animation: ease-out;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fly1 {
+    0% {
+        width: 0;
+        height: 0;
+        right: -4rem;
+        top: 3.2rem;
+        border-radius: 60%;
+        opacity: 0.2;
+    }
+
+    21% {
+        animation: linear;
+    }
+
+    22% {
+        width: 1.2rem;
+        height: 1.2rem;
+        top: 3rem;
+        right: 0;
+    }
+
+    50% {
+        border-radius: 0;
+        animation: ease-out;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fly2 {
+    0% {
+        width: 0;
+        height: 0;
+        right: -3rem;
+        bottom: 0.4rem;
+        border-radius: 60%;
+        opacity: 0.2;
+    }
+
+    21% {
+        animation: linear;
+        right: 0
+    }
+
+    22% {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    50% {
+        border-radius: 0;
+        animation: ease-out;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        opacity: 1;
+    }
+}
+
+/* story.html */
+@keyframes click_story_1 {
+    0% {
+        transform: scale(1.05);
+    }
+    33.33% {
+        transform: scale(1.15);
+    }
+    66.67% {
+        margin-top: 0.48rem;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.click_story_1 {
+    animation: click_story_1 1s both;
+}
+
+@keyframes click_story_2 {
+    0% {
+        transform: scale(1.05);
+    }
+
+    33.33% {
+        transform: scale(1.15);
+    }
+
+    66.67% {
+        margin-bottom: 0.48rem;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.click_story_2 {
+    animation: click_story_2 1s both;
+}

@@ -1,0 +1,97 @@
+@import './utils/font.css';
+@import './utils/keyframes.css';
+
+body {
+    background-image: url(../img/background.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#wrapper {
+    margin-top: 0.77rem;
+    height: 8.69rem;
+}
+
+#wrapper .content {
+    margin-left: 1.35rem;
+    width: 10.14rem;
+    color: #FDFCFC;
+}
+
+#wrapper .title {
+    height: 1.39rem;
+    font-size: 1rem;
+    font-family: PangMenZhengDao-Cu;
+}
+
+#wrapper .title span {
+    font-size: 0.5rem;
+}
+
+#wrapper .text-area {
+    height: 7.30rem;
+    overflow: scroll;
+    font-family: SourceHanSerifCN-Medium;
+}
+
+#wrapper .text-area::-webkit-scrollbar {
+    width: 0 !important
+}
+
+#wrapper ul li {
+    height: 1.185rem;
+}
+
+#wrapper .scrollbar {
+    position: absolute;
+    width: 0;
+    height: 6.85rem;
+    margin-top: 0.2rem;
+    border: 0.025rem solid rgba(253, 252, 252, 0.5);
+    border-radius: 0.1rem;
+}
+
+#wrapper .line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0.86rem;
+    margin-left: -0.03rem;
+    border: 0.025rem solid #FDFCFC;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#wrapper .line:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+#wrapper .rank {
+    margin-left: 0.44rem;
+    vertical-align: 0.25rem;
+    font-size: 0.8rem;
+}
+
+#wrapper .rank-10 {
+    margin-left: 0.22rem;
+}
+
+#wrapper .name {
+    vertical-align: 0.25rem;
+    margin-left: 0.44rem;
+    font-size: 0.5rem;
+}
+
+#wrapper .name-10 {
+    margin-left: 0.22rem;
+}
+
+#wrapper .score {
+    font-size: 0.5rem;
+    float: right;
+    margin-top: 0.39rem;
+}

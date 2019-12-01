@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>故事</title>
+    <link rel="stylesheet" href="./CSS/utils/reset.css">
+    <link rel="stylesheet" href="./CSS/story.css">
+    <script src="./JS/utils/vue.js"></script>
+    <script src="./JS/utils/utilities.js"></script>
+</head>
+<body style="transition: background-image 0.75s">
+    <audio loop="loop" src="" id="bgm"></audio>
+    <img src="./img/game.png" alt="" id="intro" class="emerge">
+    <div id="wrapper">
+        <div id="select">
+            <div id="0" class="display_none">{{ first }}</div>
+            <div id="1" class="display_none">{{ second }}</div>
+        </div>
+    </div>
+    <div id="storyboard">
+        <div class="triangle"></div>
+        <div class="title">
+            <p class="nexttitle">{{ title }}</p>
+        </div>
+        <div class="textarea">
+            <p class="nexttext">{{ text }}</p>
+        </div>
+    </div>
+    <script src="./JS/story.js"></script>
+</body>
+</html>

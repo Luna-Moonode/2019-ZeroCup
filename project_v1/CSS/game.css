@@ -1,0 +1,117 @@
+@import './utils/keyframes.css';
+
+#game-select {
+    position: absolute;
+    top: 0;
+    color: #FBFAFA;
+    font-size: 0.36rem;
+    font-family: SourceHanSerifCN-Medium;
+}
+#game-select div, #game-select, img, #game-select p {
+    position: absolute;
+    white-space: nowrap;
+    cursor: pointer;
+}
+#game-select div {
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+#game-select div:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+
+#dreamstartp {
+    top: 1.20rem;
+    left: 1.22rem;
+    font-size: 0.59rem;
+    /* opacity: 0; */
+}
+
+#dyht-gs {
+    top: 3.36rem;
+    left: 0.52rem;
+    width: 3.60rem;
+    height: 3.25rem;
+    /* opacity: 0; */
+}
+#dyht-gs img {
+    width: 3.60rem;
+    height: 3.25rem;
+}
+#dyht-gs p {
+    top: 1.37rem;
+    left: 0.65rem;
+}
+#bs-gs {
+    top: 1.52rem;
+    left: 4.27rem;
+    width: 4.8796rem;
+    height: 4.94rem;
+    /* opacity: 0; */
+}
+#bs-gs img {
+    width: 4.8796rem;
+    height: 4.94rem;
+}
+#bs-gs p {
+    top: 4.12rem;
+    left: 1.36rem;
+}
+
+#nz-gs {
+    top: 6.71rem;
+    left: 1.70rem;
+    width: 3.49rem;
+    height: 4.09rem;
+    /* opacity: 0; */
+}
+#nz-gs img {
+    right: 0;
+    width: 3.01rem;
+    height: 4.09rem;
+}
+#nz-gs p {
+    top: 3.30rem;
+    left: 0;
+}
+
+#lxh-gs {
+    top: 3.86rem;
+    left: 10.24rem;
+    width: 2.87rem;
+    height: 3.57rem;
+}
+#lxh-gs img {
+    width: 2.87rem;
+    height: 3.57rem;
+}
+#lxh-gs p {
+    top: 2.85rem;
+    left: 1.44rem;
+}
+
+#dsgl-gs {
+    top: 7.15rem;
+    left: 6.71rem;
+    width: 3.75rem;
+    height: 3.65rem;
+}
+#dsgl-gs p {
+    top: 1.39rem;
+    left: -0.36rem;
+}
+#dsgl-gs img {
+    width: 3.75rem;
+    height: 3.66rem;
+}
+#mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: aliceblue;
+    filter: blur(100rem);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>排行榜</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/rank.css">
+    <script src="./JS/vue.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="content">
+            <div class="title">今日排行榜<span>(前100名)</span></div>
+                <div class="text-area" id="textArea">
+                    <ul>
+                        <span class="scrollbar">
+                            <span class="line" id="line"></span>
+                        </span>
+                        <li v-for="item, index in rankArr">
+                            <span class="rank" :class="[{'rank-10': index >= 9}]">{{ index + 1 }}</span>
+                            <span class="name" :class="[{'name-10': index >= 9}]">{{ item.username }}</span>
+                            <span class="score">{{ item.score }}分</span>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <script src="./JS/utilities.js"></script>
+    <script src="./JS/rank.js"></script>
+</body>
+
+</html>

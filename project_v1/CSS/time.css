@@ -1,0 +1,335 @@
+@import url(./utils/font.css);
+@import url(./utils/keyframes.css);
+
+body {
+    background-image: url(../img/homeback.png);
+    background-size: 105.3% 102%;
+    background-position: -0.2rem -0.02rem;
+    background-attachment: fixed;
+    transition: 1s background-image;
+}
+
+#header {
+    height: 0.725rem;
+    font-size: 0.24rem;
+    font-family: SourceHanSerifCN-Medium;
+    font-weight: 500;
+    color: #FBFAFA;
+}
+
+#header .nav {
+    margin: 0 auto;
+    width: 3.72rem;
+}
+
+#header .nav .list {
+    position: absolute;
+    top: 0.33rem;
+    left: 1.24rem;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+#header .nav .list:hover {
+    transform: scale(1.3);
+    transition: transform 0.5s;
+}
+
+#header .nav ul {
+    position: fixed;
+    z-index: 2;
+    padding-top: 0.34rem;
+}
+
+#header .nav ul li {
+    float: left;
+    margin-right: 1.03rem;
+    height: 0.35rem;
+    line-height: 0.35rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+#header .nav ul .underline {
+    position: absolute;
+    margin-top: 0.34rem;
+    height: 0;
+    width: 0.78rem;
+    border: 0.015rem solid #FAF5CF;
+}
+
+#header .nav ul .nav0 {
+    margin-left: -0.17rem;
+    transition: margin-left 0.3s;
+}
+
+#header .nav ul .nav1 {
+    margin-left: 1.45rem;
+    transition: margin-left 0.3s;
+}
+
+#header .nav ul .nav2 {
+    margin-left: 3.1rem;
+    transition: margin-left 0.3s;
+}
+
+#arrow {
+    position: absolute;
+    top: 9.5rem;
+    left: 10.7rem;
+    width: 0.41rem;
+    height: 0.2488rem;
+    opacity: 0.7;
+    color: #FFFFFF;
+    font-size: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    transform: scale(1);
+    transition: top 0.5s, transform 0.5s;
+    animation: toAndFro 2s infinite;
+}
+
+#arrow:hover {
+    top: 9.7rem;
+    transform: scale(1.1);
+    transition: top 0.5s, transform 0.5s;
+    animation: to 0.25s;
+}
+
+/* body bg classes */
+.bg-default {
+    background-image: url(../img/homeback.png);
+    transition: 1s background-image;
+}
+
+.bg-game {
+    overflow: auto;
+    background-image: url(../img/background.png);
+    transition: 1s background-image;
+}
+
+.bg-lxh {
+    overflow: auto;
+    background-image: url(../img/time/lxh-time.png);
+    transition: 1s background-image;
+}
+
+.bg-nz {
+    overflow: auto;
+    background-image: url(../img/time/nz-time.png);
+    transition: 1s background-image;
+}
+
+.bg-bs {
+    overflow: auto;
+    background-image: url(../img/time/bs-time.png);
+    transition: 1s background-image;
+}
+
+.bg-dyht {
+    overflow: auto;
+    background-image: url(../img/time/dyht-time.png);
+    transition: 1s background-image;
+}
+
+.bg-dsgl {
+    overflow: auto;
+    background-image: url(../img/time/dsgl-time.png);
+    transition: 1s background-image;
+}
+
+.bg-bottom {
+    overflow: auto;
+    background-image: url(../img/bg-bottom.png);
+    transition: 1s background-image;
+}
+
+/* ----------- */
+#axis .line {
+    position: absolute;
+    top: 16.23rem;
+    left: 1.66rem;
+    width: 0;
+    /* height: 48.62rem; */
+    height: 47.6rem;
+    border: 0.02rem solid #FFFFFF;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.time-wrapper {
+    position: absolute;
+    top: 10.80rem;
+    width: 100%;
+    height: 62.31rem;
+}
+
+.time-wrapper div {
+    width: 100%;
+    height: 11.04rem;
+}
+
+/*  */
+#axis .container {
+    position: absolute;
+    left: 1.44rem;
+    width: 5.08rem;
+    height: 1.02rem;
+    display: flex;
+    text-align: center;
+    font-family: SourceHanSerifCN-Medium;
+}
+
+#axis .circle {
+    z-index: 1;
+    width: 0.44rem;
+    height: 0.44rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 0.03rem 0.06rem rgba(0, 0, 0, 0.16);
+    border-radius: 50%;
+    margin-top: 0.3rem;
+    cursor: pointer;
+}
+
+#axis .triangle {
+    width: 0;
+    height: 0;
+    margin-top: 0.39rem;
+    border-width: 0.14rem 0.37rem 0.14rem 0;
+    border-color: transparent rgba(212, 211, 211, 0.253) transparent transparent;
+    border-style: solid;
+    backdrop-filter: blur(0.03rem);
+    opacity: 0.75;
+}
+
+#axis .title {
+    z-index: 1;
+    width: 4.37rem;
+    height: 1.02rem;
+    background-color: rgba(212, 211, 211, 0.253);
+    color: #FFFFFF;
+    line-height: 1.02rem;
+    font-size: 0.36rem;
+    backdrop-filter: blur(0.1rem);
+    border-radius: 0.3rem;
+    box-shadow: 0 0.03rem 0.06rem rgba(0, 0, 0, 0.16);
+    filter: blur(0.6px);
+    cursor: default;
+}
+
+#axis .textarea {
+    position: absolute;
+    z-index: 4;
+    top: -3.6rem;
+    width: 9.46rem;
+    height: 8.21rem;
+    margin-left: 5.38rem;
+    text-align: left;
+    color: #FFFFFF;
+    font-family: SourceHanSerifCN-Medium;
+    font-size: 0.3rem;
+    backdrop-filter: blur(0.15rem);
+    border-radius: 0.08rem;
+    background-color: rgba(212, 211, 211, 0.253);
+    transform: scale(0) translateX(-5rem) translateY(5rem);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+#axis .title:hover+.textarea {
+    transform: scale(1) translateX(0) translateY(0);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+#axis .textarea p {
+    margin-top: 0.5rem;
+    margin-left: 0.58rem;
+}
+
+/* 定位 */
+#axis .lxh {}
+
+/* ------- */
+/* 规定宽度 */
+#axis .container-1 {
+    top: 15.50rem;
+}
+
+#axis .container-2 {
+    top: 31.03rem;
+}
+
+#axis .container-3 {
+    top: 41.67rem;
+}
+
+#axis .container-4 {
+    top: 52.61rem;
+}
+
+#axis .container-5 {
+    top: 63.34rem;
+}
+
+/*  */
+#gamearea {
+    position: absolute;
+    top: 66rem;
+    width: 100%;
+    height: 13.68rem;
+    overflow: hidden;
+    font-family: SourceHanSerifCN-Medium;
+}
+
+#gamearea .wrapper {
+    width: 12.41rem;
+    height: 13.68rem;
+    margin-left: 2.52rem;
+    color: #FBFAFA;
+}
+
+#gamearea .wrapper .top {
+    height: 3.58rem;
+    margin-top: 1.44rem;
+    font-family: SourceHanSansCN-Bold;
+}
+
+#gamearea .wrapper .top p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#gamearea .wrapper .middle {
+    height: 1.5rem;
+    margin-top: 1.69rem;
+}
+
+#gamearea .wrapper .middle a {
+    width: 2rem;
+    display: block;
+    margin-bottom: 0.13rem;
+    /* font-family: SourceHanSerifCN-Medium; */
+    color: #FBFAFA;
+    font-size: 0.4rem;
+    text-decoration: underline;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+#gamearea .middle a:hover {
+    text-decoration: none;
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+#gamearea .footer {
+    position: absolute;
+    width: 100%;
+    top: 11.89rem;
+}
+#gamearea .footer p {
+    color: #FBFAFA;
+    text-align: center;
+    font-size: 0.26rem;
+}

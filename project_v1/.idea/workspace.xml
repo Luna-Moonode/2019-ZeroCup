@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="69978333-cec0-4807-93e3-1ea22c0aade3" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1Tnc8GkuMyDGY3uHJEjfx1APOQB" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CSS" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/project_v1/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="finalpage.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/JS/finalpage.js" working-dir="$PROJECT_DIR$/JS">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="69978333-cec0-4807-93e3-1ea22c0aade3" name="Default Changelist" comment="" />
+      <created>1574099138536</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574099138536</updated>
+      <workItem from="1574099140814" duration="1853000" />
+      <workItem from="1574137980924" duration="142000" />
+      <workItem from="1574233811571" duration="6000" />
+      <workItem from="1574260548162" duration="6749000" />
+      <workItem from="1574309124075" duration="5697000" />
+      <workItem from="1574352621436" duration="1715000" />
+      <workItem from="1574397108083" duration="7937000" />
+      <workItem from="1574431284804" duration="9491000" />
+      <workItem from="1574470708677" duration="15896000" />
+      <workItem from="1574568429939" duration="516000" />
+      <workItem from="1574651015627" duration="6173000" />
+      <workItem from="1574675453793" duration="13998000" />
+      <workItem from="1574744047096" duration="9000" />
+      <workItem from="1574744737950" duration="12824000" />
+      <workItem from="1574820178641" duration="19007000" />
+      <workItem from="1574913777676" duration="20539000" />
+      <workItem from="1574954544956" duration="152000" />
+      <workItem from="1574991362949" duration="106000" />
+      <workItem from="1575002434203" duration="9990000" />
+      <workItem from="1575028328234" duration="54859000" />
+      <workItem from="1575163682907" duration="2419000" />
+      <workItem from="1575168816300" duration="2887000" />
+      <workItem from="1575183974938" duration="288000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/JS/share.js</url>
+          <line>64</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/JS/share.js</url>
+          <line>68</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/JS/share.js</url>
+          <line>89</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/JS/game.js</url>
+          <line>66</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

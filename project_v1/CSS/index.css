@@ -1,0 +1,117 @@
+@import './utils/font.css';
+@import './utils/keyframes.css';
+
+.bg-blur {
+	background-image: url(../img/background-mask.png);
+	background-size: 118% 122%;
+	background-position: -1.4rem -1.2rem;
+	background-attachment: fixed;
+	overflow: hidden;
+	transition: background 1s;
+}
+
+.guoman-wrapper {
+	/* position: absolute; */
+	font-size: 0.24rem;
+	font-family: SourceHanSerifCN-Medium;
+	/* color: rgb(190, 86, 86); */
+	color: #FFFFFF;
+	font-weight: 500;
+	opacity: 0;
+	transform: scale(0);
+	left: 1rem;
+	transition: opacity 0.8s, transform 0.8s;
+}
+.on {
+	opacity: 1;
+	transform: scale(1);
+	transition: opacity 0.8s, transform 0.8s;
+}
+.guoman-wrapper .recommend p {
+	width: 0.48rem;
+	height: 0.35rem;
+	line-height: 0.36rem;
+	opacity: 1;
+	position: absolute;
+	left: 1.52rem;
+	top: 1.56rem;
+}
+
+.guoman-wrapper .recommend-list {
+	height: 4.16rem;
+	position: absolute;
+	left: 0.84rem;
+	top: 1.89rem;
+}
+
+.guoman-wrapper .all-list {
+	height: 4.16rem;
+	position: absolute;
+	left: 0.84rem;
+	top: 6.33rem;
+}
+
+.guoman-wrapper .recommend-list li,
+.guoman-wrapper .all-list li {
+	width: 2.49rem;
+	height: 3.56rem;
+	/* background-color: #696969; */
+	float: left;
+	/* margin-right: 0.29rem; */
+	padding: 0.3rem;
+	position: relative;
+}
+
+.guoman-wrapper .all-list li {
+	margin-bottom: 0.3rem;
+}
+
+.guoman-wrapper .recommend-list img{
+	border-radius: 0.05rem;
+	width: 2.49rem;
+	height: 3.56rem;
+}
+
+.guoman-wrapper .all-list img {
+	border-radius: 0.05rem;
+	width: 2.29rem;
+	height: 3.26rem;
+	box-shadow:0 0.1rem 2px rgba(41,41,41,0.2) ;
+	/* padding: 0 0.1rem 0.2rem 0.1rem; */
+}
+
+.guoman-wrapper .all p {
+	width: 0.48rem;
+	height: 0.35rem;
+	line-height: 0.36rem;
+	opacity: 1;
+	position: absolute;
+	left: 1.52rem;
+	top: 5.98rem;
+}
+
+.blurify {
+	-webkit-filter: blur(0.1rem);
+	-moz-filter: blur(0.1rem);
+	-ms-filter: blur(0.1rem);
+	filter: blur(0.1rem);
+	transform: scale(1.05);
+	transition: filter 0.3s, transform 0.3s;
+}
+
+.guoman-wrapper .describe {
+	width: 1.22rem;
+	height: 0.8rem;
+	position: absolute;
+	top: 1.48rem;
+	right: 0.93rem;
+	bottom: 1.88rem;
+	left: 0.94rem;
+	opacity: 0;
+	transition: opacity 0.5s;
+	text-align: center;
+}
+
+.img a {
+	color: rgba(255, 255, 255, 1);
+}

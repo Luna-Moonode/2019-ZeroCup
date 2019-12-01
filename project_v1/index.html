@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>国漫崛起</title>
+    <link rel="stylesheet" href="./CSS/utils/reset.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/time.css">
+    <link rel="stylesheet" href="./CSS/game.css">
+    <script src="./JS/utils/jquery.min.js"></script>
+    <script src="./JS/utils/vue.js"></script>
+</head>
+
+<body class="overflow_hidden">
+    <audio autoplay="autoplay" loop="loop" src="./bgm/dyht.mp3" id="bgm-dyht"></audio>
+    <div id="header">
+        <div class="nav">
+            <div class="list" id="list">国漫列表</div>
+            <ul>
+                <div class="underline" :class="[{nav0: nav0}, {nav1: nav1}, {nav2: nav2}]"></div>
+                <li id="header-li-0" @mouseenter="mouseenterli" @mouseleave="mouseleaveli">首页</li>
+                <li id="header-li-1" @mouseenter="mouseenterli" @mouseleave="mouseleaveli">时间轴</li>
+                <li id="header-li-2" @mouseenter="mouseenterli" @mouseleave="mouseleaveli">游戏</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="guoman-wrapper">
+        <div class="recommend">
+            <p>推荐</p>
+            <ul class="recommend-list">
+                <li class="img">
+                    <a href="">
+                        <img src="img/guoman-list/bsyq-card.png">
+                        <div class="describe">白蛇缘起2019.01.11</div>
+                    </a>
+                </li>
+                <li class="img">
+                    <a href="">
+                        <img src="img/guoman-list/dsgl-card.png">
+                        <div class="describe">大圣归来2015.07.10</div>
+                    </a>
+                </li>
+                <li class="img">
+                    <a href="">
+                        <img src="img/guoman-list/nz-card.png">
+                        <div class="describe">哪吒之魔童降世2019.07.26</div>
+                    </a>
+                </li>
+                <li class="img">
+                    <a href="">
+                        <img src="img/guoman-list/dyht-card.png">
+                        <div class="describe">大鱼海棠2016.07.08</div>
+                    </a>
+                </li>
+                <li class="img">
+                    <a href="">
+                        <img src="img/guoman-list/lxh-card.png">
+                        <div class="describe">罗小黑战记2019.09.12</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="all">
+            <p>全部</p>
+            <ul class="all-list">
+                <li class="img">
+					<img src="img/guoman-list/hyxhn-card.jpg">
+					<div class="describe">狐妖小红娘南国总集篇</div>
+                </li>
+                <li class="img">
+					<img src="img/guoman-list/ck567-card.jpg">
+					<div class="describe">刺客五六七全14话</div>
+                </li>
+                <li class="img">
+					<img src="img/guoman-list/ll-card.jpg">
+					<div class="describe">灵笼<br/>中章</div>
+                </li>
+                <li class="img">
+					<img src="img/guoman-list/lxh02-card.jpg">
+					<div class="describe">罗小黑战记<br>第28话</div>
+                </li>
+                <li class="img">
+					<img src="img/guoman-list/yrzx2-card.jpg">
+					<div class="describe">一人之下<br>全24话</div>
+                </li>
+				<li class="img">
+					<img src="img/guoman-list/qsmy-card.jpg">
+					<div class="describe">秦时明月<br>第18话</div>
+				</li>
+                <li class="img">
+					<img src="img/guoman-list/nnntnxs-card.jpg">
+					<div class="describe">那年那兔那些事<br>第5话</div>
+                </li>
+                <li class="img">
+					<img src="img/guoman-list/zhj-card.jpg">
+					<div class="describe">镇魂街<br>全24话</div>
+                </li>
+                <li class="img">
+					<img src="img/guoman-list/st-card.jpg">
+					<div class="describe">三体<br>即将开播</div>
+                </li>
+                <li class="img">
+					<img src="img/guoman-list/sngx-card.jpg">
+					<div class="describe">少年歌行<br>风花雪月篇</div>
+                </li>
+				<li class="img">
+					<img src="img/guoman-list/qchxdb-card.jpg">
+					<div class="describe">请吃红小豆吧<br>全16话</div>
+				</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="game-select">
+        <div id="dreamstartp">梦的开始是。</div>
+        <div id="dyht-gs">
+            <img src="./img/gs/dyht-gs.png" alt="">
+            <p>一条大鱼</p>
+        </div>
+        <div id="bs-gs">
+            <img src="./img/gs/bs-gs.png" alt="">
+            <p>雨中的一把油纸伞</p>
+        </div>
+        <div id="nz-gs">
+            <img src="./img/gs/nz-gs.png" alt="">
+            <p>一个怪小孩</p>
+        </div>
+        <div id="lxh-gs">
+            <img src="./img/gs/lxr-gs.png" alt="">
+            <p>一只黑猫</p>
+        </div>
+        <div id="dsgl-gs">
+            <img src="./img/gs/dsgl-gs.png" alt="">
+            <p>一只猴子</p>
+        </div>
+    </div>
+
+    <div id="arrow" class="iconfont">&#xe513;</div>
+    <div id="axis">
+        <div class="line"></div>
+        <div class="container container-1">
+            <div class="circle"></div>
+            <div class="triangle"></div>
+            <div class="title">2019.09.07罗小黑战记</div>
+            <div class="textarea lxh">
+                <p>导演：MTJJ</p>
+                <p>编剧：MTJJ </p>
+                <p>国家地区：中国</p>
+                <p>制作公司：北京寒木春华动画技术有限公司</p>
+                <p>剧情：</p>
+                <p>《罗小黑战记》主要讲述了一个少女养猫而发生的种种离奇故事，整个作品风格很“中国式”。故事情节搞笑、温馨别致，单帧信息量庞大，画风极其可爱，惹得广大网友直呼“萌出一脸血”，堪称中国治愈系神作。
+                </p>
+            </div>
+        </div>
+        <div class="container container-2">
+            <div class="circle"></div>
+            <div class="triangle"></div>
+            <div class="title">2019.07.26哪吒魔童降世</div>
+            <div class="textarea nz">
+                <p>导演：饺子</p>
+                <p>编剧：饺子</p>
+                <p>国家地区：中国</p>
+                <p>制作公司：霍尔果斯彩条屋影业有限公司</p>
+                <p>剧情：</p>
+                <p>
+                    天地灵气孕育出一颗能量巨大的混元珠，元始天尊将混元珠提炼成灵珠和魔丸，灵珠投胎为人，助周伐纣时可堪大用；而魔丸则会诞出魔王，为祸人间。元始天尊启动了天劫咒语，3年后天雷将会降临，摧毁魔丸。太乙受命将灵珠托生于陈塘关李靖..
+                </p>
+            </div>
+        </div>
+        <div class="container container-3">
+            <div class="circle"></div>
+            <div class="triangle"></div>
+            <div class="title">2019.01.11白蛇缘起</div>
+            <div class="textarea">
+                <p>导演：黄家康、赵霁</p>
+                <p>编剧：大毛</p>
+                <p>国家地区：中国大陆、美国</p>
+                <p>制作公司：追光动画、华纳兄弟</p>
+                <p>剧情：</p>
+                <p>晚唐年间，国师发动民众大量捕蛇。前去刺杀国师的白蛇意外失忆，被捕蛇村少年阿宣救下。为帮助少女找回记忆，两人踏上了一段冒险旅程。过程中两人感情迅速升温，但少女蛇妖的身份也逐渐显露，另一边国师与蛇族之间不可避免的大战也即将打响，两人的爱情面临着巨大的考验..
+                </p>
+            </div>
+        </div>
+        <div class="container container-4">
+            <div class="circle"></div>
+            <div class="triangle"></div>
+            <div class="title">2016.07.08大鱼海棠</div>
+            <div class="textarea">
+                <p>导演：梁旋、张春</p>
+                <p>编剧：梁旋</p>
+                <p>国家地区：中国大陆</p>
+                <p>制作公司：彼岸天文化有限公司，北京光线影业有限公司，霍尔果斯彩条屋影业有限公司</p>
+                <p>剧情：</p>
+                <p>居住在“神之围楼”里的女孩“椿”，十六岁生日那天变作一条海豚到人间巡礼，被大海中的一张网困住，一个人类男孩因为救她而落入深海死去。为了报恩，她需要在自己的世界里帮助男孩的灵魂成长为比鲸更巨大的鱼并回归大海..
+                </p>
+            </div>
+        </div>
+        <div class="container container-5">
+            <div class="circle"></div>
+            <div class="triangle"></div>
+            <div class="title">2015.07.10大圣归来</div>
+            <div class="textarea">
+                <p>导演：田晓鹏</p>
+                <p>编剧：田晓鹏、刘虎、米粒、金冉、金成</p>
+                <p>国家地区：中国</p>
+                <p>制作公司：横店影视，天空之城，燕城十月，微影时代</p>
+                <p>剧情：</p>
+                <p>西游记之大圣归来剧情介绍：长安城，一个山妖横行，百姓们日夜不得安宁的城市，发生着这样的一个故事。
+                    江流儿是一个孤儿，他与行脚僧法明相依为命，江流儿听了齐天大圣的故事之后很向往，想要去看一眼大闹天空的孙悟空，一次，山妖劫掠童男童女，来到了五行山，并机缘巧合之下将孙悟空的封印给解除了，这个故事由此展开。
+                </p>
+            </div>
+        </div>
+    </div>
+    <ul class="time-wrapper"></ul>
+    
+    <div id="gamearea">
+        <div class="wrapper">
+            <div class="top">
+                <p>So</p>
+                <p>Let's have a dream</p>
+            </div>
+            <div class="middle">
+                <a style="cursor: pointer;" onclick="bottomStartGameHandler()">开始游戏</a>
+                <a href="rank.html">排行榜</a>
+            </div>
+        </div>
+        <div class="footer"><p>2019-米神nb！</p></div>
+    </div>
+    <div id="mask"></div>
+
+
+
+    <script src="./JS/utils/utilities.js"></script>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/time.js"></script>
+    <script src="./JS/game.js"></script>
+</body>
+
+</html>

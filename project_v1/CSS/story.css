@@ -1,0 +1,131 @@
+@import './utils/font.css';
+@import './utils/keyframes.css';
+
+body {
+    background-size: 100% 9.80rem;
+    background-attachment: fixed;
+    background-position-y: -0.08rem;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21.6rem;
+    height: 10.80rem;
+    z-index: 3;
+}
+
+#storyboard {
+    position: relative;
+    margin-top: 8.04rem;
+    height: 2.76rem;
+    font-size: 0.50rem;
+    font-family: SourceHanSerifCN-Medium;
+    color: #FBFAFA;
+}
+.default {
+    background: #D13518;
+}
+.blue {
+    background: #31B4B4;
+}
+#storyboard .triangle {
+    position: absolute;
+    top: -0.74rem;
+    left: 15.78rem;
+    width: 0;
+    height: 0;
+    border-width: 0 0.525rem 0.74rem 0.525rem;
+    border-style: solid;
+}
+#storyboard .triangle_red {
+    border-color: transparent transparent #942410 transparent;
+}
+#storyboard .triangle_blue {
+    border-color: transparent transparent #077583 transparent;
+}
+
+#storyboard p {
+    position: absolute;
+    cursor: default;
+    white-space: nowrap;
+}
+
+#storyboard .title {
+    height: 1.38rem;
+    opacity: 0.87;
+}
+#storyboard .title_red {
+    background: linear-gradient(180deg, rgba(136, 34, 15, 1) 0%, rgba(209, 53, 24, 0.01) 100%);
+}
+#storyboard .title_blue {
+    background:linear-gradient(180deg, rgba(8, 108, 121, 1) 0%, rgba(49, 180, 180, 0.01) 100%);
+}
+
+#storyboard .textarea {
+    height: 1.38rem;
+    width: 100%;
+}
+
+#storyboard .title .nexttitle {
+    left: 2.1rem;
+    top: 0.47rem;
+}
+
+#storyboard .textarea .nexttext {
+    left: 2.69rem;
+    bottom: 0.67rem;
+}
+
+#wrapper {
+    position: absolute;
+    top: 2.44rem;
+    width: 100%;
+    height: 2.33rem;
+}
+
+#select {
+    width: 7.50rem;
+    height: 2.33rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#select div {
+    width: 7.50rem;
+    height: 0.96rem;
+    font-size: 0.40rem;
+    font-family: SourceHanSerifCN-Medium;
+    color: #FBFAFA;
+    text-align: center;
+    box-shadow: 0 0.03rem 0.06rem rgba(0, 0, 0, 0.16);
+    border-radius: 0.1rem;
+    line-height: 0.96rem;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+#select div:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+.shrink {
+    transform: scale(0.95);
+    transition: transform 0.5s;
+}
+
+.firstSelection {
+    transform: translateY(0.2rem) scale(1.1);
+}
+
+.secondSelection {
+    transform: translateY(-0.2rem) scale(1.1);
+}
